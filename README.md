@@ -13,6 +13,7 @@ browser — no local setup, no installs.
 | 03 | [Transformer Attention](03_transformer_attention.ipynb) | Self-attention, attention maps | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/03_transformer_attention.ipynb) |
 | 04 | [Prompting Techniques](04_prompting_techniques.ipynb) | Prompt patterns and evaluation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/04_prompting_techniques.ipynb) |
 | 05 | [Free APIs & Integration](05_api_integration.ipynb) | Groq/Gemini APIs, digital twin build | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/05_api_integration.ipynb) |
+| 06 | [Universal API Components](Universal_API_Components.ipynb) | The 5 API building blocks, wrapper class, full pipeline | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/Universal_API_Components.ipynb) |
 
 Facilitators: see `Week 1 Curriculum & Facilitator Guide.docx`.
 
@@ -31,7 +32,7 @@ back to your fork via **File → Save a copy in GitHub**.
 Notebooks 01–04 need nothing beyond what Colab preinstalls (numpy,
 pandas, matplotlib, seaborn, scikit-learn).
 
-Notebook 05 calls a live LLM API and needs a free
+Notebooks 05 and 06 call a live LLM API and need a free
 [Groq API key](https://console.groq.com). Don't paste the key into a
 cell — anything you type into a notebook can end up shared. Use Colab's
 Secrets panel instead (🔑 in the left sidebar): add a secret named
