@@ -1,47 +1,20 @@
-# Week 1 — LLM Foundations
+# Week 1: LLM Foundations for Digital Twins
 
-Hands-on notebooks covering probability and neural networks through to
-working with live LLM APIs. Every notebook runs in Google Colab in the
-browser — no local setup, no installs.
+Open any notebook in Google Colab. Nothing to install. To keep your own editable version, go to **File → Save a copy in Drive**.
 
-## Notebooks
+1. **Probability & Neural Networks**: how AI makes predictions using probability, the basics of neural networks, and how both connect to LLMs.
+   [Open in Colab](https://colab.research.google.com/github/techatatf/weekOne/blob/main/01_probability_neural_networks.ipynb)
 
-| # | Notebook | Topics | |
-|---|----------|--------|---|
-| 01 | [Probability & Neural Networks](01_probability_neural_networks.ipynb) | Probability foundations, network basics | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/01_probability_neural_networks.ipynb) |
-| 02 | [LLM Architecture Anatomy](02_llm_architecture_anatomy.ipynb) | Tokenization, embeddings, model internals | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/02_llm_architecture_anatomy.ipynb) |
-| 03 | [Transformer Attention](03_transformer_attention.ipynb) | Self-attention, attention maps | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/03_transformer_attention.ipynb) |
-| 04 | [Prompting Techniques](04_prompting_techniques.ipynb) | Prompt patterns and evaluation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/04_prompting_techniques.ipynb) |
-| 05 | [Free APIs & Integration](05_api_integration.ipynb) | Groq/Gemini APIs, digital twin build | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/05_api_integration.ipynb) |
-| 06 | [Universal API Components](Universal_API_Components.ipynb) | The 5 API building blocks, wrapper class, full pipeline | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/techatatf/weekOne/blob/main/Universal_API_Components.ipynb) |
+2. **LLM Big Picture & Anatomy**: tokenization, embeddings, and an overview of how LLMs are put together.
+   [Open in Colab](https://colab.research.google.com/github/techatatf/weekOne/blob/main/02_llm_architecture_anatomy.ipynb)
 
-Facilitators: see `Week 1 Curriculum & Facilitator Guide.docx`.
+3. **The Transformer & Attention**: how attention lets a model focus on the most relevant parts of its input.
+   [Open in Colab](https://colab.research.google.com/github/techatatf/weekOne/blob/main/03_transformer_attention.ipynb)
 
-## How to work on your own version
+4. **Prompt Engineering**: the basics of writing prompts that get useful, reliable answers.
+   [Open in Colab](https://colab.research.google.com/github/techatatf/weekOne/blob/main/04_prompting_techniques.ipynb)
 
-Click any **Open in Colab** badge above, then **File → Save a copy in
-Drive**. That copy is yours — edit and run it freely; nothing you do
-affects this repo.
+5. **Universal API Components (Code Lab)**: the 5 building blocks of any LLM API call, a reusable client class, and one pipeline that ties all the lessons together.
+   [Open in Colab](https://colab.research.google.com/github/techatatf/weekOne/blob/main/Universal_API_Components.ipynb)
 
-Prefer to keep your work in Git? Fork this repo first, then swap
-`techatatf` for your username in the Colab URL. Colab can commit straight
-back to your fork via **File → Save a copy in GitHub**.
-
-## Requirements
-
-Notebooks 01–04 need nothing beyond what Colab preinstalls (numpy,
-pandas, matplotlib, seaborn, scikit-learn).
-
-Notebooks 05 and 06 call a live LLM API and need a free
-[Groq API key](https://console.groq.com). Don't paste the key into a
-cell — anything you type into a notebook can end up shared. Use Colab's
-Secrets panel instead (🔑 in the left sidebar): add a secret named
-`GROQ_API_KEY`, enable notebook access, then read it with
-
-```python
-from google.colab import userdata
-api_key = userdata.get('GROQ_API_KEY')
-```
-
-Running locally instead? Set it as an environment variable and the
-notebook's `os.getenv('GROQ_API_KEY')` will pick it up.
+Notebook 5 needs a free Groq API key from [console.groq.com](https://console.groq.com). Add it in Colab's Secrets panel (the 🔑 icon) with the name `GROQ_API_KEY`. Don't paste the key into a cell.
